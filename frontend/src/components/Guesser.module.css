@@ -1,0 +1,56 @@
+.mainContainer {
+  width: 500px;
+  height: 600px;
+  margin: 0 auto; /* shorthand for margin-left: auto; margin-right: auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tagContainer {
+  width: 80%; /* Set desired width for the tag container */
+  margin-top: 20px; /* Add some top margin */
+  padding: 0; /* Remove default padding */
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap */
+  justify-content: center; /* Center flex items horizontally */
+}
+
+.tagContainer li {
+  margin: 6px; /* Adjust margin as needed */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Alternate background colors for tags */
+.tagContainer li:nth-child(odd) {
+  background-color: #9ce3cf;
+}
+
+.tagContainer li:nth-child(even) {
+  background-color: #f7f4ea;
+}
+
+.input {
+  background-color: transparent;
+  font-size: 20px;
+  width: 50%;
+  margin: 20px 0px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px;
+  text-align: center; /* Center the text horizontally */
+}
+
+.input::placeholder {
+  color: white; /* Set placeholder color to white */
+  opacity: 0.8; /* Optionally adjust placeholder opacity */
+}
+
+.result {
+  width: 60%;
+  text-align: center;
+  color: #efd510;
+}
